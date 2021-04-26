@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="navdiv">
+        <div id="website_name_div">
+            <label id="website_name">Notepad</label>
+        </div>
+        <div id="option_div">
+            <label id="new_f">NewFile</label>
+            <input type="file" id="input_f" style="visibility: none;">
+            <label for="input_f" id="open_f">OpenFile</label>
+        </div>
+    </div>
+    <div id="maindiv">
+        <p>Filename:</p>
+        <input id="file_name" type="text">
+        <br>
+        <p>Your Text Here:</p>
+        <textarea id="notes" rows="25" cols="100"></textarea>
+        <br>
+        <button id="save_btn">Save</button>
+    </div>
+</body>
+<style>
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    #navdiv {
+        text-align: justify;
+        width: 100%;
+        height: 60px;
+        box-shadow: 0px 3px 4px grey;
+
+    }
+
+    #website_name_div {
+        
+        float: right;
+        padding:20px;
+    }
+
+    #website_name {
+        font-size: 30px;
+        font: caption;
+        font-weight: bold;
+    }
+
+    #option_div{
+        padding:15px;
+    }
+
+    #maindiv {
+        width: 90%;
+        height: 80%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #new_f,
+    #open_f {
+        text-align: center;
+        display: inline-block;
+        padding: 5px;
+        font-size: 20px;
+        font: caption;
+    }
+
+    #new_f:hover,
+    #open_f:hover {
+        cursor: pointer;
+        background-color: rgb(209, 209, 209);
+        transition: 0.5s ease;
+    }
+
+    #input_f {
+        display: none;
+    }
+
+    p {
+        font-size: 17px;
+        font: caption;
+    }
+
+    textarea {
+        width: 70%;
+        height: 70%;
+    }
+
+    #save_btn {
+        border: 1px solid rgb(185, 185, 185);
+        background-color: rgb(185, 185, 185);
+        border-radius: 3px;
+        font-size: 17px;
+    }
+
+    #save_btn:hover {
+        border: 1px solid rgb(145, 145, 145);
+        background-color: rgb(145, 145, 145);
+        cursor: pointer;
+        border-radius: 3px;
+        transition: 0.2s ease;
+    }
+</style>
+<script src="notepad.js"></script>
+
+</html>
